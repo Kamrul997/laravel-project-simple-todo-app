@@ -9,4 +9,8 @@ class CreateController extends Controller
     public function create(){
         return view("todos.createTask.index");
     }
+
+    public function createNewTask(){
+        return redirect(route("homePage"));
+    }
 }

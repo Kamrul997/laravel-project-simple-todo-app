@@ -5,15 +5,15 @@
 @section('bodyContent')
 
 <h2 class = "text-center">Create New Task</h2>
-<form class="mt-3" method="POST" action="" >
+<form class="mt-3" method="POST" action="{{route('createNewTaskPage')}}" >
 @csrf
   <div class="form-group my-2">
     <label class = "mb-2">Title:</label>
     <input type="text" class="form-control" name="taskTitle" placeholder="Title">
     <div class="text-danger">
-      @error('task')
+      <!-- @error('task')
         {{$message}}
-      @enderror
+      @enderror -->
     </div>
   </div>
 
@@ -21,9 +21,9 @@
     <label class = "mb-2">Description:</label>
     <textarea class="form-control" row="10" name="taskDescription" placeholder="Description"></textarea>
     <div class="text-danger">
-      @error('task')
+      <!-- @error('task')
         {{$message}}
-      @enderror
+      @enderror -->
     </div>
   </div>
 
@@ -31,9 +31,9 @@
     <label class = "mb-2">Start Date:</label>
     <input type="date" class="form-control" name="taskStartDate">
     <div class="text-danger">
-      @error('task')
+      <!-- @error('task')
         {{$message}}
-      @enderror
+      @enderror -->
     </div>
   </div>
 
@@ -41,9 +41,9 @@
     <label class = "mb-2">Deadline:</label>
     <input type="date" class="form-control" name="taskDeadline">
     <div class="text-danger">
-      @error('task')
+      <!-- @error('task')
         {{$message}}
-      @enderror
+      @enderror -->
     </div>
   </div>
  
