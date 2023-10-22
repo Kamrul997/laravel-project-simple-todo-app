@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController as HomeController;
 use App\Http\Controllers\CreateController as CreateController;
 use App\Http\Controllers\UpdateController as UpdateController;
+use App\Http\Controllers\DetailsController as DetailsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::post('/create-new-task', [CreateController::class, 'createNewTask'])->nam
 //update page link
 Route::get('/edit', [UpdateController::class, 'edit'])->name("editPage");
 Route::post('/update', [UpdateController::class, 'update'])->name("updatePage");
+//details page link
+Route::get('/details', [DetailsController::class, 'details'])->name("detailsPage");

@@ -12,7 +12,7 @@
   <thead>
     <tr>
       <th class="col-2">#</th>
-      <th class="col-7">Tasks</th>
+      <th class="col-7">Task Title</th>
       <th class="col-3">Action</th>
     </tr>
   </thead>
@@ -23,14 +23,12 @@
         <td></td>
         <td>
           <div class="d-flex justify-content-between">
-            <a href="" type="submit" class="btn btn-primary btn-small">Details</a>
+            <a href="{{route('detailsPage')}}" type="submit" class="btn btn-primary btn-small">Details</a>
             <a href="{{route('editPage')}}" type="submit" class="btn btn-success btn-small">Edit</a>
             <a href="" type="submit" class="btn btn-danger btn-small">Delete</a>
           </div>
         </td>
       </tr>
-   
-    
     
   </tbody>
 </table>
