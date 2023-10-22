@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController as HomeController;
+use App\Http\Controllers\CreateController as CreateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,7 @@ use App\Http\Controllers\HomeController as HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'home'])->name("homepage");
+//home page link
+Route::get('/', [HomeController::class, 'home'])->name("homePage");
+//create page link
+Route::get('/create', [CreateController::class, 'create'])->name("createPage");
