@@ -23,7 +23,7 @@ Route::get('/', [HomeController::class, 'home'])->name("homePage");
 Route::get('/create', [CreateController::class, 'create'])->name("createPage");
 Route::post('/create-new-task', [CreateController::class, 'createNewTask'])->name("createNewTaskPage");
 //update page link
-Route::get('/edit', [UpdateController::class, 'edit'])->name("editPage");
+Route::get('/edit/{id}', [UpdateController::class, 'edit'])->name("editPage");
 Route::post('/update', [UpdateController::class, 'update'])->name("updatePage");
 //details page link
 Route::get('/details', [DetailsController::class, 'details'])->name("detailsPage");
