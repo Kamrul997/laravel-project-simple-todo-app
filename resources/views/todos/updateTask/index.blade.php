@@ -7,7 +7,7 @@
 <h2 class = "text-center">Update Task</h2>
 <form class="mt-3" method="POST" action="{{route('updatePage')}}" >
 @csrf
-    <input type="text" hidden value="{{$task->id}}">
+    <input type="text" name="id" hidden value="{{$task->id}}">
   <div class="form-group my-2">
     <label class = "mb-2">Title:</label>
     <input type="text" class="form-control" name="taskTitle" placeholder="Title" value="{{$task->title}}">

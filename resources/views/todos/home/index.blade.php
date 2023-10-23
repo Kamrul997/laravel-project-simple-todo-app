@@ -23,7 +23,7 @@
         <td>{{$task->title}}</td>
         <td>
           <div class="d-flex justify-content-between">
-            <a href="{{route('detailsPage')}}" type="submit" class="btn btn-primary btn-small">Details</a>
+            <a href="{{route('detailsPage',$task->id)}}" type="submit" class="btn btn-primary btn-small">Details</a>
             <a href="{{route('editPage',$task->id)}}" type="submit" class="btn btn-success btn-small">Edit</a>
             <a href="" type="submit" class="btn btn-danger btn-small">Delete</a>
           </div>

@@ -26,4 +26,6 @@ Route::post('/create-new-task', [CreateController::class, 'createNewTask'])->nam
 Route::get('/edit/{id}', [UpdateController::class, 'edit'])->name("editPage");
 Route::post('/update', [UpdateController::class, 'update'])->name("updatePage");
 //details page link
-Route::get('/details', [DetailsController::class, 'details'])->name("detailsPage");
+Route::get('/details/{id}', [DetailsController::class, 'details'])->name("detailsPage");
+//delete page link
+// Route::get('/delete/{id}', [DetailsController::class, 'delete'])->name("deletePage");

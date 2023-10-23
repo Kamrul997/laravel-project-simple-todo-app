@@ -12,29 +12,26 @@
         <tbody>
             
             <tr>
-                <td>Title</td>
-                <td>:</td>
-                <td>Task Title</td>
+                <td class="col-2">Title</td>
+                <td class="col-1">:</td>
+                <td class="col-9">{{$task->title}}</td>
             </tr>
             <tr>
                 <td>Description</td>
                 <td>:</td>
                 <td>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Maxime, similique? Eligendi commodi quos voluptatum sit incidunt 
-                    aliquam distinctio, perferendis at debitis natus, corrupti aperiam 
-                    veritatis minima quibusdam sapiente. Quod, animi.
+                {{$task->description}}
                 </td>
             </tr>
             <tr>
                 <td>Start Date</td>
                 <td>:</td>
-                <td>13-02-2023</td>
+                <td>{{$task->start_date}}</td>
             </tr>
             <tr>
                 <td>Deadline</td>
                 <td>:</td>
-                <td>13-02-2023</td>
+                <td>{{$task->deadline}}</td>
             </tr>
             
         </tbody>
