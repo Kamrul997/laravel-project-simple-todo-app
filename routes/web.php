@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController as HomeController;
 use App\Http\Controllers\CreateController as CreateController;
 use App\Http\Controllers\UpdateController as UpdateController;
 use App\Http\Controllers\DetailsController as DetailsController;
+use App\Http\Controllers\DeleteController as DeleteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,4 @@ Route::post('/update', [UpdateController::class, 'update'])->name("updatePage");
 //details page link
 Route::get('/details/{id}', [DetailsController::class, 'details'])->name("detailsPage");
 //delete page link
-// Route::get('/delete/{id}', [DetailsController::class, 'delete'])->name("deletePage");
+Route::get('/delete/{id}', [DeleteController::class, 'delete'])->name("deletePage");
